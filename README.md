@@ -15,7 +15,7 @@ In this repo, I try to auto config my zsh in ubuntu.
 
 I write two scripts to complete the config task automatically.
 
-You can use the code below to auto config your zsh like me.
+You can use the code below to auto config your zsh like how I config.
 
 ``` bash
 # You may use https://gitee.com/olez961/myZshConfiguration.git if you 
