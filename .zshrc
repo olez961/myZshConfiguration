@@ -79,6 +79,14 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
+export CUDA_HOME=/usr/local/cuda-11.7
+export LD_LIBRARY_PATH=${CUDA_HOME}/lib64
+export PATH=${CUDA_HOME}/bin:${PATH}
+
+# anaconda configuration
+export CONDA_HOME=~/Softwares/anaconda
+export PATH=${CONDA_HOME}/bin:${PATH}
+source ${CONDA_HOME}/bin/activate root
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -109,3 +117,8 @@ alias zshupdate="source ~/.zshrc"
 alias vimconfig="vim ~/.vimrc"
 alias py="python3"
 alias go="cd ~/work_space"
+alias vimnoplug="vim -u ~/work_space/code/essential.vim"
+
+# tmux configuration
+alias tmuxnew="tmux new -t"
+alias tmuxattach="tmux attach -t"
